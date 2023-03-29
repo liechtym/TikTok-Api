@@ -212,9 +212,9 @@ class browser(BrowserInterface):
             'url': url,
             'device_id': device_id,
             'context': str(context),
-            'page': str(page),
-            '_get_acrawler()': _get_acrawler()
+            'page': str(page)
         }))
+        print('_get_acrawler()', _get_acrawler())
         evaluatedPage = await page.evaluate(
             '''() => {
             var url = "'''
