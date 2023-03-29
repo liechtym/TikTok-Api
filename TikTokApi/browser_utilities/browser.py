@@ -15,7 +15,7 @@ from ..utilities import LOGGER_NAME
 from .get_acrawler import _get_acrawler, _get_tt_params_script
 from playwright.async_api import async_playwright
 import asyncio
-
+print('new')
 logger = logging.getLogger(LOGGER_NAME)
 
 
