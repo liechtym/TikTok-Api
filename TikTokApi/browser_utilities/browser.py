@@ -210,7 +210,7 @@ class browser(BrowserInterface):
         await page.add_script_tag(content=_get_acrawler())
         print(json.dumps({
             'url': url,
-            'device_id', device_id,
+            'device_id': device_id,
             'page': page,
             'context': context,
             'page': page,
