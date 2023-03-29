@@ -207,7 +207,10 @@ class browser(BrowserInterface):
             device_id = self.device_id
 
         url = "{}&verifyFp={}&device_id={}".format(url, verifyFp, device_id)
-
+        print('url', url)
+        print('device_id', device_id)
+        print('context', context)
+        print('page', page)
         await page.add_script_tag(content=_get_acrawler())
         evaluatedPage = await page.evaluate(
             '''() => {
