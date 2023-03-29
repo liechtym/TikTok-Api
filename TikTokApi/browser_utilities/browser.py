@@ -211,9 +211,8 @@ class browser(BrowserInterface):
         print(json.dumps({
             'url': url,
             'device_id': device_id,
-            'page': page,
-            'context': context,
-            'page': page,
+            'context': str(context),
+            'page': str(page),
             '_get_acrawler()': _get_acrawler()
         }))
         evaluatedPage = await page.evaluate(
